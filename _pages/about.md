@@ -28,15 +28,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/VibeThinker1_5B.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/VibeThinker1_5B.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B](https://arxiv.org/pdf/2511.06221)
 
 **Sen Xu**, Yi Zhou, Wei Wang, Jixin Min, Zhibin Yin, Yingwei Dai, Shixi Liu, Lianyu Pang, Yirong Chen, Junlin Zhang
 
-[**GitHub**](https://github.com/WeiboAI/VibeThinker) | [**Huggingface**](https://huggingface.co/WeiboAI/VibeThinker-1.5B) 
-- We open-source VibeThinker-1.5B, demonstrating that through innovative post-training algorithms, tiny LLMs can achieve reasoning capabilities comparable to large-parameter models. 
+[**Github**](https://github.com/WeiboAI/VibeThinker) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- We open-source VibeThinker-1.5B, demonstrating that through innovative post-training algorithms, tiny LLMs can achieve reasoning capabilities comparable to large-parameter models.
 </div>
 </div>
 
