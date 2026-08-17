@@ -19,7 +19,7 @@ redirect_from:
     </div>
     <p class="home-role">About Me</p>
     <p class="home-intro">I am a Senior Research Engineer at the AI R&amp;D Department of Sina Weibo. I received my B.S. and Ph.D. degrees in Computer Science and Technology from Beijing Jiaotong University in 2018 and 2024, where I was advised by <a href="https://faculty.bjtu.edu.cn/8466/" target="_blank" rel="noopener">Prof. Shikui Wei</a>.</p>
-    <p class="home-intro">During my Ph.D., I worked primarily on computer vision and visual representations. After graduation, I joined Weibo and shifted my research toward foundation models. I currently lead the development of the open-source VibeThinker series. I now work on reasoning, AI for Science, post-training, and agentic systems for foundation models.</p>
+    <p class="home-intro">During my Ph.D., I worked primarily on computer vision and visual representations. After joining Weibo, I shifted my research toward foundation models. I am currently the primary technical contributor to the open-source VibeThinker series, coordinating model development and experiments. I now work on reasoning, AI for Science, post-training, and agentic systems for foundation models.</p>
     <div class="home-actions" aria-label="Profile links">
       <a class="home-action home-action--primary" href="mailto:senxu1@bjtu.edu.cn">Email</a>
       <a class="home-action" href="https://scholar.google.com/citations?user=cutdjpIAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
