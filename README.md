@@ -1,4 +1,4 @@
-# Sen Xu — Personal Homepage
+# Personal Homepage
 
 Source for [rookiie.github.io](https://rookiie.github.io), a lightweight Jekyll site hosted by GitHub Pages.
 
