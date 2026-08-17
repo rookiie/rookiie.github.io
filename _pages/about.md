@@ -2,59 +2,117 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
-redirect_from: 
+layout: home
+nav_active: home
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<section class="home-hero" aria-labelledby="hero-title">
+  <div class="home-hero__copy">
+    <p class="home-kicker">Large language models · Post-training · Agents</p>
+    <h1 id="hero-title">Sen Xu</h1>
+    <p class="home-role">About Me</p>
+    <p class="home-intro">I am a Senior Research Engineer at the AI R&amp;D Department of Sina Weibo. I received my B.S. and Ph.D. degrees in Computer Science and Technology from Beijing Jiaotong University in 2018 and 2024, where I was advised by <a href="https://faculty.bjtu.edu.cn/8466/" target="_blank" rel="noopener">Prof. Shikui Wei</a>.</p>
+    <p class="home-intro">During my Ph.D., I worked primarily on computer vision and visual representations. After graduation, I joined Weibo and shifted my research toward foundation models. I currently lead the development of the open-source VibeThinker series. I now work on reasoning, AI for Science, post-training, and agentic systems for foundation models.</p>
+    <div class="home-actions" aria-label="Profile links">
+      <a class="home-action home-action--primary" href="mailto:senxu1@bjtu.edu.cn">Email</a>
+      <a class="home-action" href="https://scholar.google.com/citations?user=cutdjpIAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+      <a class="home-action" href="https://github.com/rookiie" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
 
-<span class='anchor' id='about-me'></span>
+<section class="home-section home-news" aria-labelledby="news-title">
+  <h2 id="news-title" class="home-section-heading">News</h2>
+  <ul class="home-news-list">
+    <li>
+      <time datetime="2026-08-12">2026.08.12</time>
+      <span class="home-news-list__tag">Preprint</span>
+      <p>We posted a new preprint introducing CLR, a training-free framework for efficient test-time reasoning.</p>
+    </li>
+    <li>
+      <time datetime="2026-06-17">2026.06.17</time>
+      <span class="home-news-list__tag">Milestone</span>
+      <p>VibeThinker-3B ranked #1 on Papers with Code’s Trending Research.</p>
+    </li>
+    <li>
+      <time datetime="2026-06-16">2026.06.16</time>
+      <span class="home-news-list__tag">Release</span>
+      <p>We released <a href="https://huggingface.co/WeiboAI/VibeThinker-3B" target="_blank" rel="noopener"><strong>VibeThinker-3B</strong></a>, which was later featured in X’s Today’s News.</p>
+    </li>
+    <li>
+      <time datetime="2025-11-19">2025.11.19</time>
+      <span class="home-news-list__tag">Milestone</span>
+      <p>VibeThinker-1.5B reached #1 on Hugging Face’s trending models list.</p>
+    </li>
+    <li>
+      <time datetime="2025-11-11">2025.11.11</time>
+      <span class="home-news-list__tag">Release</span>
+      <p>We released <a href="https://huggingface.co/WeiboAI/VibeThinker-1.5B" target="_blank" rel="noopener"><strong>VibeThinker-1.5B</strong></a>, and its technical report achieved the #1 Paper of the Day ranking on Hugging Face.</p>
+    </li>
+    <li>
+      <time datetime="2024-09">2024.09</time>
+      <span class="home-news-list__tag">Milestone</span>
+      <p>Received my Ph.D. from Beijing Jiaotong University.</p>
+    </li>
+    <li>
+      <time datetime="2023-12-09">2023.12.09</time>
+      <span class="home-news-list__tag">Paper</span>
+      <p>One paper was accepted to AAAI 2024.</p>
+    </li>
+  </ul>
+</section>
 
-I am a Senior Research Engineer at the AI R&D Department, Sina Weibo Inc. Before joining Sina Weibo, I obtained my B.S. and Ph.D. degrees from the School of Computer Science and Technology, Beijing Jiaotong University (BJTU) in 2018 and 2024, respectively, where I was supervised by Prof. [Shikui Wei](https://faculty.bjtu.edu.cn/8466/) and Prof. [Yao Zhao](http://mepro.bjtu.edu.cn/researcher.html). My research interests lie in large language models, multimodal learning, and post-training techniques for foundation models, with a particular focus on supervised fine-tuning (SFT), reinforcement learning (RL), and agent-related systems.
+<section class="home-section" aria-labelledby="recent-research-title">
+  <div class="home-section-heading-row">
+    <h2 id="recent-research-title" class="home-section-heading">Recent Research</h2>
+    <a href="{{ '/research/' | relative_url }}">View all <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="research-list research-list--home">
+    <article class="research-entry">
+      <a class="research-entry__media" href="{{ '/research/vibethinker-1-5b/' | relative_url }}" aria-label="Read about VibeThinker-1.5B">
+        <img src="{{ '/images/VibeThinker1_5B.png' | relative_url }}" width="791" height="424" alt="VibeThinker-1.5B benchmark comparison">
+      </a>
+      <div class="research-entry__content">
+        <p class="research-entry__meta">2025 · Reasoning · Open source</p>
+        <h3><a href="{{ '/research/vibethinker-1-5b/' | relative_url }}">VibeThinker-1.5B: Tiny model, big logic</a></h3>
+        <p class="research-entry__summary">A compact reasoning model showing how diversity-driven post-training can elicit strong reasoning ability without relying on model scale alone.</p>
+        <div class="research-entry__links">
+          <a class="research-entry__link--primary" href="{{ '/research/vibethinker-1-5b/' | relative_url }}">Explore project <span aria-hidden="true">→</span></a>
+          <a class="research-entry__link--secondary" href="https://arxiv.org/pdf/2511.06221" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+          <a class="research-entry__link--secondary" href="https://github.com/WeiboAI/VibeThinker" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat. -->
-
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 10 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
-
-
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/VibeThinker1_5B.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B](https://arxiv.org/pdf/2511.06221)
-
-**Sen Xu**, Yi Zhou, Wei Wang, Jixin Min, Zhibin Yin, Yingwei Dai, Shixi Liu, Lianyu Pang, Yirong Chen, Junlin Zhang
-
-[**Github**](https://github.com/WeiboAI/VibeThinker) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- We open-source VibeThinker-1.5B, demonstrating that through innovative post-training algorithms, tiny LLMs can achieve reasoning capabilities comparable to large-parameter models.
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+<section class="home-section" aria-labelledby="experience-title">
+  <h2 id="experience-title" class="home-section-heading">Experience</h2>
+  <div class="home-timeline">
+    <article>
+      <time>Present</time>
+      <div>
+        <h3>Senior Research Engineer</h3>
+        <p>AI R&amp;D Department, Sina Weibo Inc. · Beijing</p>
+      </div>
+    </article>
+    <article>
+      <time>2024</time>
+      <div>
+        <h3>Ph.D. in Computer Science and Technology</h3>
+        <p>Beijing Jiaotong University · advised by Prof. Shikui Wei</p>
+      </div>
+    </article>
+    <article>
+      <time>2018</time>
+      <div>
+        <h3>B.S. in Computer Science and Technology</h3>
+        <p>Beijing Jiaotong University</p>
+      </div>
+    </article>
+  </div>
+</section>

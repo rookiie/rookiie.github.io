@@ -1,0 +1,10 @@
+<header class="home-header">
+  <div class="home-header__inner">
+    <a class="home-wordmark" href="{{ '/' | relative_url }}" aria-label="Sen Xu homepage">Sen Xu</a>
+    <nav class="home-nav" aria-label="Primary navigation">
+      <a{% if page.nav_active == 'home' %} class="is-active" aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+      <a{% if page.nav_active == 'research' %} class="is-active" aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a>
+      <a{% if page.nav_active == 'contact' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>

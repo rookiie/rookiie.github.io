@@ -1,0 +1,67 @@
+---
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="home-body">
+    {% include browser-upgrade.html %}
+
+    <a class="home-skip-link" href="#content">Skip to content</a>
+
+    {% include profile-nav.html %}
+
+    <main id="content" class="home-main">
+      {{ content }}
+    </main>
+
+    <footer class="home-footer">
+      <span>Sen Xu</span>
+      <span>Beijing, China · Updated {{ site.time | date: "%Y" }}</span>
+    </footer>
+
+    <script>
+      (function () {
+        var visibleNewsItems = 6;
+        var newsList = document.querySelector(".home-news-list");
+
+        if (!newsList) return;
+
+        var newsItems = Array.prototype.slice.call(newsList.children).filter(function (item) {
+          return item.tagName === "LI";
+        });
+
+        if (newsItems.length <= visibleNewsItems) return;
+
+        function updateNewsViewport() {
+          var listTop = newsList.getBoundingClientRect().top;
+          var lastVisibleBottom = newsItems[visibleNewsItems - 1].getBoundingClientRect().bottom;
+          var visibleHeight = lastVisibleBottom - listTop;
+
+          newsList.style.setProperty("--news-list-height", Math.ceil(visibleHeight) + "px");
+        }
+
+        newsList.classList.add("home-news-list--scrollable");
+        newsList.setAttribute("tabindex", "0");
+        newsList.setAttribute("aria-label", "News. Scroll to view older items.");
+        updateNewsViewport();
+
+        var resizeFrame;
+        window.addEventListener("resize", function () {
+          window.cancelAnimationFrame(resizeFrame);
+          resizeFrame = window.requestAnimationFrame(updateNewsViewport);
+        });
+
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(updateNewsViewport);
+        }
+      }());
+    </script>
+
+    {% include scripts.html %}
+  </body>
+</html>

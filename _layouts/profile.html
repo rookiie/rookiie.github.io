@@ -1,0 +1,29 @@
+---
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="home-body content-body">
+    {% include browser-upgrade.html %}
+
+    <a class="home-skip-link" href="#content">Skip to content</a>
+
+    {% include profile-nav.html %}
+
+    <main id="content" class="content-main">
+      {{ content }}
+    </main>
+
+    <footer class="home-footer">
+      <span>Sen Xu</span>
+      <span>Beijing, China · Updated {{ site.time | date: "%Y" }}</span>
+    </footer>
+
+    {% include scripts.html %}
+  </body>
+</html>
