@@ -212,6 +212,12 @@ html {
   text-transform: uppercase;
 }
 
+.home-name {
+  display: flex;
+  align-items: baseline;
+  gap: 1.3rem;
+}
+
 .home-hero h1 {
   margin: 0;
   max-width: 684px;
@@ -221,6 +227,14 @@ html {
   font-weight: 400;
   line-height: 0.96;
   letter-spacing: -0.03em;
+}
+
+.home-name__native {
+  color: $home-muted;
+  font-family: "Songti SC", "STSong", $home-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .home-role {

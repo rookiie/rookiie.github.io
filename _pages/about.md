@@ -13,7 +13,10 @@ redirect_from:
 <section class="home-hero" aria-labelledby="hero-title">
   <div class="home-hero__copy">
     <p class="home-kicker">Large language models · Post-training · Agents</p>
-    <h1 id="hero-title">Sen Xu</h1>
+    <div class="home-name">
+      <h1 id="hero-title">Sen Xu</h1>
+      <span class="home-name__native" lang="zh-CN">(徐森)</span>
+    </div>
     <p class="home-role">About Me</p>
     <p class="home-intro">I am a Senior Research Engineer at the AI R&amp;D Department of Sina Weibo. I received my B.S. and Ph.D. degrees in Computer Science and Technology from Beijing Jiaotong University in 2018 and 2024, where I was advised by <a href="https://faculty.bjtu.edu.cn/8466/" target="_blank" rel="noopener">Prof. Shikui Wei</a>.</p>
     <p class="home-intro">During my Ph.D., I worked primarily on computer vision and visual representations. After graduation, I joined Weibo and shifted my research toward foundation models. I currently lead the development of the open-source VibeThinker series. I now work on reasoning, AI for Science, post-training, and agentic systems for foundation models.</p>
