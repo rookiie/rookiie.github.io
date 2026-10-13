@@ -119,3 +119,21 @@ redirect_from:
     </article>
   </div>
 </section>
+
+<section class="home-section" aria-labelledby="service-title">
+  <h2 id="service-title" class="home-section-heading">Academic Service</h2>
+  <ul class="home-service-list">
+    <li>
+      <span class="home-service-list__label">Recognition</span>
+      <p>NeurIPS 2026 Top Reviewer</p>
+    </li>
+    <li>
+      <span class="home-service-list__label">Conference Service</span>
+      <p>Reviewer for NeurIPS, CVPR, ECCV, and AISTATS</p>
+    </li>
+    <li>
+      <span class="home-service-list__label">Journal Service</span>
+      <p>Reviewer for TMM, TCSVT, APIN, and others</p>
+    </li>
+  </ul>
+</section>

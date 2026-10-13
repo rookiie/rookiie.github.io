@@ -340,6 +340,59 @@ html {
   line-height: $home-supporting-line-height;
 }
 
+.home-service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-service-list li {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: 1.05rem 0;
+  border-top: 1px solid $home-line;
+}
+
+.home-service-list li:last-child {
+  border-bottom: 1px solid $home-line;
+}
+
+.home-service-list__label {
+  padding-top: 0.18rem;
+  color: $home-accent;
+  font-family: $home-mono;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.home-service-list p {
+  margin: 0;
+  color: $home-ink;
+  font-family: $home-serif;
+  font-optical-sizing: auto;
+  font-size: 1.12rem;
+  line-height: $home-supporting-line-height;
+}
+
+@media (max-width: 560px) {
+  .home-service-list li {
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .home-service-list__label {
+    font-size: 0.68rem;
+    letter-spacing: 0.035em;
+  }
+}
+
+.home-service-list p {
+  min-width: 0;
+}
+
 .home-footer {
   min-height: 82px;
   display: flex;
