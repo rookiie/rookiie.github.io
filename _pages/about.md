@@ -133,7 +133,7 @@ redirect_from:
     </li>
     <li>
       <span class="home-service-list__label">Journal Service</span>
-      <p>Reviewer for TMM, TCSVT, APIN, and others</p>
+      <p>Reviewer for IEEE TMM, IEEE TCSVT, APIN, and others</p>
     </li>
   </ul>
 </section>
